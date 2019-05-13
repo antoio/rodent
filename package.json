@@ -2,10 +2,10 @@
   "name": "rodent",
   "version": "1.0.0",
   "description": "Rest API with Node js Backend and Mongo DB connection",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
     "start": "node --experimental-modules src/index.mjs",
-    "start-watch": "nodemon src/index.mjs",
+    "start-watch": "nodemon --experimental-modules src/index.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
