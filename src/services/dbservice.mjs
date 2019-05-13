@@ -1,18 +1,17 @@
 import * as mongo from 'mongodb';
 
-const mongoclient = mongo.MongoClient;
+const client = mongo.default.MongoClient;
 const url = 'mongodb://localhost:27017';
 
-function start(){
+export default function start(){
     console.log("Running...");
-mongoclient.connect(url, (err, client) => {
-    if(err) {
-        console.error(err);
-        return;
-    }
+    client.connect(url, (err, db) => {
+        if(err) {
+            console.error(err);
+            return;
+        }
 
-    console.log("Success 🎉");
-});
+        console.log("Success 🎉");
+        db.close();
+    });
 }
-
-export default start;
