@@ -13,6 +13,13 @@ router.get('/person', (req, res) => {
     }
 });
 
+router.get('/db', (req, res) => {
+    console.log("Running...");
+    console.table(mongoclient);
+    mongoclient();
+    console.log("Finished.");
+});
+
 // Params property on request object
 // localhost:4200/person/thomas
 router.get('/person/:name', (req, res) => {
