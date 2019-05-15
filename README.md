@@ -8,4 +8,6 @@ I try to build a Rest API Backend with Node.js. Just out of curiosity. The goal 
 * express
 * MongoDB
 
+## Todo
+* find purpose 
 
