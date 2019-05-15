@@ -9,5 +9,5 @@ I try to build a Rest API Backend with Node.js. Just out of curiosity. The goal 
 * MongoDB
 
 ## Todo
-* find purpose 
+* find purpose :grin:
 
